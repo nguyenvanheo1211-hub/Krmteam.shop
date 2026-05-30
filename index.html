@@ -3,338 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>krmteam.shop - Shop Game Uy Tín Hàng Đầu</title>
-    <!-- Tailwind CSS -->
+    <title>BHUYNHSGAMING.COM</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        gaming: {
-                            dark: '#0f172a',
-                            card: '#1e293b',
-                            primary: '#3b82f6',
-                            accent: '#8b5cf6'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #3b82f6;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #8b5cf6;
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,41,59,0.95) 100%), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-        }
+        .custom-shadow { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
     </style>
 </head>
-<body class="bg-gaming-dark text-slate-200 font-sans antialiased overflow-x-hidden">
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- Navigation -->
-    <nav class="bg-gaming-card/80 backdrop-blur-md sticky top-0 z-40 border-b border-slate-700/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="flex-shrink-0 text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 tracking-wider">
-                        <i class="fa-solid fa-gamepad mr-2 text-blue-400"></i>krmteam.shop
-                    </a>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#" class="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Trang Chủ</a>
-                        <a href="#packages" class="text-slate-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Sản Phẩm</a>
-                        <a href="#" class="text-slate-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Nạp Tiền</a>
-                        <a href="#" class="text-slate-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Liên Hệ</a>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <button class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 py-2 rounded-full font-bold shadow-lg shadow-blue-500/30 transition-all transform hover:scale-105">
-                        Đăng Nhập
-                    </button>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="-mr-2 flex md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-700 focus:outline-none">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
+    <!-- Header -->
+    <header class="bg-white p-4 custom-shadow flex flex-wrap justify-between items-center gap-4">
+        <div class="font-bold text-xl text-blue-600">BHUYNHSGAMING.COM</div>
+        <div class="flex gap-2">
+            <input type="text" placeholder="Nhập tìm kiếm" class="border p-2 rounded-lg text-sm w-48">
+            <button class="bg-gray-100 px-4 py-2 rounded-lg text-sm">Tìm kiếm</button>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-gradient text-center py-32 relative">
-        <div class="max-w-4xl mx-auto px-4 relative z-10">
-            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/20 text-blue-300 text-sm font-semibold mb-4 border border-blue-500/30">
-                🚀 Hệ thống tự động 24/7
-            </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
-                Thế Giới Game Đỉnh Cao Tại <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">krmteam.shop</span>
-            </h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-                Cung cấp các gói tài khoản, vật phẩm, và tiền tệ trong game uy tín, giá rẻ nhất thị trường. Giao dịch nhanh chóng, bảo mật tuyệt đối!
-            </p>
-            <a href="#packages" class="inline-block bg-white text-gaming-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                Khám Phá Ngay <i class="fa-solid fa-arrow-down ml-2"></i>
-            </a>
-        </div>
-        <!-- Abstract shape decoration -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-            <svg class="relative block w-full h-12" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,121.1,194.2,112.5,237.1,106.72,279.7,89.5,321.39,56.44Z" fill="#0f172a"></path>
-            </svg>
+        <div class="flex gap-2">
+            <button class="bg-red-100 text-red-600 px-4 py-2 rounded-lg text-sm font-semibold">Đăng nhập</button>
+            <button class="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-semibold">Lịch sử</button>
         </div>
     </header>
 
-    <!-- Packages Section -->
-    <main id="packages" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Các Gói Sản Phẩm Hot</h2>
-            <div class="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-            <p class="mt-4 text-slate-400">Chọn cho mình một gói phù hợp để bắt đầu hành trình</p>
+    <!-- Content -->
+    <main class="max-w-6xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
+        
+        <!-- Cột trái: Banner và Dịch vụ -->
+        <div class="lg:col-span-3 space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="h-64 rounded-xl overflow-hidden shadow-md">
+                    <img src="https://quanlyshop.com/assets/uploads/banner/6a0971e2c730a-bf4431c0fcbd.png" alt="Banner chính" class="w-full h-full object-cover">
+                </div>
+                <div class="grid grid-rows-2 gap-4">
+                    <div class="rounded-xl overflow-hidden shadow-md">
+                        <img src="https://quanlyshop.com/assets/uploads/banner/6a0971e2c730a-bf4431c0fcbd.png" alt="Banner phụ 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-md">
+                        <img src="https://quanlyshop.com/assets/uploads/banner/6a0971e2c730a-bf4431c0fcbd.png" alt="Banner phụ 2" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Danh mục game -->
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                <a href="#" class="bg-white p-3 rounded-xl border text-center hover:shadow-lg transition">
+                    <img src="https://static.deltiasgaming.com/2025/04/Blox-Fruits.jpg" class="w-16 h-16 mx-auto rounded-lg mb-2 object-cover">
+                    <p class="text-xs font-semibold">Blox Fruit</p>
+                </a>
+                <a href="#" class="bg-white p-3 rounded-xl border text-center hover:shadow-lg transition">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a0/cb/44/a0cb447b-2dfb-69c7-5059-c4216307956c/196835967394.jpg/1200x1200bf-60.jpg" class="w-16 h-16 mx-auto rounded-lg mb-2 object-cover">
+                    <p class="text-xs font-semibold">Free Fire</p>
+                </a>
+                <a href="#" class="bg-white p-3 rounded-xl border text-center hover:shadow-lg transition">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.J6y0A_CO3oTF2YGyH5t3qAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="w-16 h-16 mx-auto rounded-lg mb-2 object-cover">
+                    <p class="text-xs font-semibold">Brainrot</p>
+                </a>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Package 1 -->
-            <div class="bg-gaming-card rounded-2xl overflow-hidden border border-slate-700/50 shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer" onclick="showModal()">
-                <div class="h-48 bg-gradient-to-br from-green-500/20 to-blue-500/20 relative">
-                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=500&auto=format&fit=crop" alt="Game cover" class="w-full h-full object-cover mix-blend-overlay group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/500x300/1e293b/3b82f6?text=Image'">
-                    <div class="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                        TÂN THỦ
-                    </div>
+        <!-- Cột phải: Box Nạp thẻ -->
+        <div class="lg:col-span-1">
+            <div class="bg-white p-5 rounded-xl border border-blue-200 custom-shadow">
+                <h2 class="font-bold mb-4 flex items-center gap-2">🏆 TOP NẠP THÁNG 05</h2>
+                <div class="flex bg-gray-100 rounded-lg p-1 mb-4">
+                    <button class="bg-red-500 text-white flex-1 py-2 rounded-md text-sm">Nạp thẻ</button>
+                    <button class="flex-1 py-2 text-sm">Tháng này</button>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-white mb-2">Gói Khởi Đầu</h3>
-                    <p class="text-slate-400 text-sm mb-6 line-clamp-2">Bao gồm các vật phẩm cơ bản để bạn dễ dàng làm quen với game. Phù hợp cho người mới.</p>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-500 line-through block">100.000đ</span>
-                            <span class="text-2xl font-bold text-blue-400">50.000đ</span>
-                        </div>
-                        <button class="bg-slate-700 group-hover:bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors flex items-center">
-                            <i class="fa-solid fa-cart-shopping mr-2"></i> Mua
-                        </button>
-                    </div>
-                </div>
+                <select class="w-full border p-2 rounded-lg mb-3 text-sm">
+                    <option>Viettel</option>
+                </select>
+                <input type="text" placeholder="Nhập mã thẻ" class="w-full border p-2 rounded-lg mb-3 text-sm">
+                <input type="text" placeholder="Nhập số serial" class="w-full border p-2 rounded-lg mb-4 text-sm">
+                <button class="w-full bg-red-600 text-white py-3 rounded-lg font-bold">NẠP THẺ NGAY</button>
             </div>
-
-            <!-- Package 2 -->
-            <div class="bg-gaming-card rounded-2xl overflow-hidden border border-blue-500/30 shadow-[0_0_15px_rgba(59,130,246,0.15)] hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer relative" onclick="showModal()">
-                <div class="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-transparent pointer-events-none"></div>
-                <div class="h-48 bg-gradient-to-br from-blue-600/20 to-purple-600/20 relative">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&auto=format&fit=crop" alt="Game cover" class="w-full h-full object-cover mix-blend-overlay group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/500x300/1e293b/8b5cf6?text=Image'">
-                    <div class="absolute top-4 right-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-                        BÁN CHẠY
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-white mb-2">Gói Cày Cuốc</h3>
-                    <p class="text-slate-400 text-sm mb-6 line-clamp-2">Gói tầm trung giúp bạn tăng tốc độ cày cấp và nhận nhiều đặc quyền hấp dẫn.</p>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-500 line-through block">300.000đ</span>
-                            <span class="text-2xl font-bold text-blue-400">200.000đ</span>
-                        </div>
-                        <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2 rounded-lg font-semibold shadow-lg shadow-blue-500/30 transition-colors flex items-center">
-                            <i class="fa-solid fa-cart-shopping mr-2"></i> Mua
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Package 3 -->
-            <div class="bg-gaming-card rounded-2xl overflow-hidden border border-slate-700/50 shadow-lg hover:shadow-purple-500/10 transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer" onclick="showModal()">
-                <div class="h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 relative">
-                    <img src="https://images.unsplash.com/photo-1605901309584-818e25960b8f?w=500&auto=format&fit=crop" alt="Game cover" class="w-full h-full object-cover mix-blend-overlay group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/500x300/1e293b/ec4899?text=Image'">
-                    <div class="absolute top-4 right-4 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                        VIP PRO
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-white mb-2">Gói Siêu Cấp</h3>
-                    <p class="text-slate-400 text-sm mb-6 line-clamp-2">Sức mạnh tuyệt đối. Trang bị full đồ VIP, tài nguyên vô hạn để thống trị server.</p>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-500 line-through block">800.000đ</span>
-                            <span class="text-2xl font-bold text-purple-400">500.000đ</span>
-                        </div>
-                        <button class="bg-slate-700 group-hover:bg-purple-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors flex items-center">
-                            <i class="fa-solid fa-cart-shopping mr-2"></i> Mua
-                        </button>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
     </main>
-
-    <!-- Stats Section -->
-    <section class="border-t border-b border-slate-800 bg-gaming-card/30 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-4xl font-extrabold text-blue-400 mb-2">15K+</div>
-                    <div class="text-sm text-slate-400 uppercase tracking-wider font-semibold">Khách Hàng</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-extrabold text-purple-400 mb-2">50K+</div>
-                    <div class="text-sm text-slate-400 uppercase tracking-wider font-semibold">Giao Dịch</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-extrabold text-green-400 mb-2">99%</div>
-                    <div class="text-sm text-slate-400 uppercase tracking-wider font-semibold">Hài Lòng</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-extrabold text-orange-400 mb-2">24/7</div>
-                    <div class="text-sm text-slate-400 uppercase tracking-wider font-semibold">Hỗ Trợ</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gaming-dark pt-16 pb-8 border-t border-slate-800 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-                <div>
-                    <a href="#" class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-4 inline-block">
-                        <i class="fa-solid fa-gamepad mr-2 text-blue-400"></i>krmteam.shop
-                    </a>
-                    <p class="text-slate-400 text-sm mb-6">
-                        Shop bán tài khoản và dịch vụ game uy tín nhất Việt Nam. Cam kết bảo mật, an toàn và hỗ trợ tận tình.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-colors">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-purple-600 hover:text-white transition-colors">
-                            <i class="fa-brands fa-discord"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-red-600 hover:text-white transition-colors">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-lg mb-6">Liên Kết Nhanh</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors text-sm"><i class="fa-solid fa-angle-right mr-2 text-xs"></i>Chính sách bảo mật</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors text-sm"><i class="fa-solid fa-angle-right mr-2 text-xs"></i>Điều khoản dịch vụ</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors text-sm"><i class="fa-solid fa-angle-right mr-2 text-xs"></i>Hướng dẫn mua hàng</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors text-sm"><i class="fa-solid fa-angle-right mr-2 text-xs"></i>Kiểm tra đơn hàng</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-lg mb-6">Liên Hệ</h4>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-envelope text-blue-400 mt-1 mr-3"></i>
-                            <span class="text-slate-400 text-sm">support@krmteam.shop</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-phone text-purple-400 mt-1 mr-3"></i>
-                            <span class="text-slate-400 text-sm">0123 456 789 (9:00 - 22:00)</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-slate-800 pt-8 text-center">
-                <p class="text-slate-500 text-sm">
-                    &copy; 2026 krmteam.shop. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Custom Modal / Message Box -->
-    <div id="customModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center z-50 opacity-0 transition-opacity duration-300">
-        <!-- Modal Content -->
-        <div id="modalCard" class="bg-gaming-card border border-slate-700/80 rounded-2xl p-8 max-w-sm w-full mx-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] transform scale-90 transition-transform duration-300 text-center">
-            
-            <div class="w-20 h-20 bg-slate-800 rounded-full mx-auto flex items-center justify-center mb-6 border-4 border-slate-700 shadow-inner">
-                <i class="fa-solid fa-box-open text-4xl text-slate-400"></i>
-            </div>
-            
-            <h3 class="text-2xl font-bold text-white mb-2">Chưa tải lên gói</h3>
-            <p class="text-slate-400 text-sm mb-8">
-                Gói sản phẩm này hiện tại đang được cập nhật. Vui lòng quay lại sau nhé!
-            </p>
-            
-            <button onclick="hideModal()" class="w-full bg-gradient-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-lg">
-                Đóng
-            </button>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script>
-        const modal = document.getElementById('customModal');
-        const modalCard = document.getElementById('modalCard');
-
-        // Function to show the modal
-        function showModal() {
-            // Remove hidden to make it block
-            modal.classList.remove('hidden');
-            
-            // Trigger reflow to ensure animation works
-            void modal.offsetWidth;
-            
-            // Add classes to animate in
-            modal.classList.remove('opacity-0');
-            modal.classList.add('opacity-100');
-            
-            modalCard.classList.remove('scale-90');
-            modalCard.classList.add('scale-100');
-        }
-
-        // Function to hide the modal
-        function hideModal() {
-            // Animate out
-            modal.classList.remove('opacity-100');
-            modal.classList.add('opacity-0');
-            
-            modalCard.classList.remove('scale-100');
-            modalCard.classList.add('scale-90');
-            
-            // Wait for transition to finish before hiding
-            setTimeout(() => {
-                modal.classList.add('hidden');
-            }, 300); // Matches the duration-300 class
-        }
-
-        // Close modal when clicking outside of it
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                hideModal();
-            }
-        });
-    </script>
 
 </body>
 </html>
